@@ -1,0 +1,107 @@
+/* NAVBAR MAIN */
+.navbar-modern {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* BRAND SECTION */
+.navbar-brand-custom {
+  font-size: 30px;
+  font-weight: 900;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  /* Gradient text */
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: transform .25s ease, letter-spacing .2s ease;
+}
+
+/* Brand hover effects */
+.navbar-brand-custom:hover {
+  transform: translateY(-3px);
+  letter-spacing: 1px;
+}
+
+/* Animated Logo Cube */
+.brand-icon {
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.85);
+  color: #6d28d9;
+  font-weight: 700;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+  animation: floatIcon 3s infinite ease-in-out;
+}
+
+/* Logo floating animation */
+@keyframes floatIcon {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* NAV LINKS */
+.nav-link {
+  position: relative;
+  font-weight: 600 !important;
+}
+
+.nav-link:hover {
+  color: #4f46e5 !important;
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background: #4f46e5;
+  border-radius: 10px;
+  transition: width .3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* PROFILE AVATAR */
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+/* Dark mode toggle button */
+.dark-toggle {
+  border-radius: 30px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+
+  background: rgba(0,0,0,0.05);
+  border: none;
+}
+
+.dark-toggle:hover {
+  background: rgba(0,0,0,0.1);
+}
+
