@@ -76,7 +76,7 @@ export default function Register() {
             >
               <option value="user">User</option>
               <option value="agent">Agent</option>
-              <option value="admin">Admin</option>
+            {/* <option value="admin">Admin</option>*/ }
             </Form.Select>
           </Form.Group>
 
